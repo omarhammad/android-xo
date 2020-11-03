@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         x_chr = 1;
         o_chr = 2;
         check_image_type = 1;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         onClickImages();
 
     }
-
 
     public void dropImage(View view) {
         ImageView content = (ImageView) view;
@@ -83,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         images.add((ImageView) findViewById(R.id.image8));
         images.add((ImageView) findViewById(R.id.image9));
 
-
         for (final ImageView image : images) {
 
             image.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkWinner() {
-
 
         for (int pos[] : winning_pos) {
 
@@ -136,8 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
         the_winner.setVisibility(View.VISIBLE);
         play_again.setVisibility(View.VISIBLE);
-
-
+        
     }
 
     public void resetContent() {
